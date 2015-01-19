@@ -18,7 +18,7 @@ namespace IOT.WebApplication
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            DeviceAccessBase.ConnectionString = ConfigurationManager.ConnectionStrings["m2mPostgreSqlConnectionString"].ToString();
+            DeviceAccessBase.ConnectionString = ConfigurationManager.ConnectionStrings["IOTPostgreSqlConnectionString"].ToString();
         }
     }
 }
