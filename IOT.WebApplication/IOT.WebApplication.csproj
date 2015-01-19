@@ -202,6 +202,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\MyScripts\deviceBaseBroadcaster.js" />
+    <Content Include="Scripts\MyScripts\myTest.js" />
     <Content Include="Scripts\ol-debug.js" />
     <Content Include="Scripts\ol.js" />
     <Content Include="Scripts\respond.js" />
