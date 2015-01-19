@@ -1,0 +1,23 @@
+-- Function: getalldevices()
+
+-- DROP FUNCTION getalldevices(integer);
+
+CREATE OR REPLACE FUNCTION getalldevices()
+  RETURNS SETOF refcursor AS
+$BODY$DECLARE
+recordSet  refcursor; 
+BEGIN
+
+OPEN recordSet FOR
+
+SELECT D."id", D."device_type_id", D."device_id", D."message_type_id", D."message", D."event_date" 
+FROM "events_json" D;
+
+RETURN NEXT recordSet ;
+
+END;$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100
+  ROWS 1000;
+ALTER FUNCTION getdevicebasebyid(integer)
+  OWNER TO postgres;

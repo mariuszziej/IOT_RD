@@ -1,0 +1,16 @@
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\obj\Debug\IOT.DAL.csprojResolveAssemblyReference.cache
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\IOT.DAL.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\IOT.DAL.pdb
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\obj\Debug\IOT.DAL.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\obj\Debug\IOT.DAL.pdb
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\IOT.Domain.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\Mono.Security.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\Npgsql.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\IOT.Domain.pdb
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\Npgsql.xml
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\de\Npgsql.resources.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\es\Npgsql.resources.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\fi\Npgsql.resources.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\fr\Npgsql.resources.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\ja\Npgsql.resources.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.DAL\bin\Debug\zh-CN\Npgsql.resources.dll

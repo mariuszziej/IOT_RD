@@ -1,0 +1,5 @@
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.Domain\bin\Debug\IOT.Domain.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.Domain\bin\Debug\IOT.Domain.pdb
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.Domain\obj\Debug\IOT.Domain.csprojResolveAssemblyReference.cache
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.Domain\obj\Debug\IOT.Domain.dll
+C:\Users\mariusz.zieja\Documents\Visual Studio 2013\Projects\IOT\IOT.Domain\obj\Debug\IOT.Domain.pdb
