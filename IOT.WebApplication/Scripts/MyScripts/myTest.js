@@ -1,6 +1,6 @@
-﻿$(function () {
+﻿
     var map;
-
+    // ldz [19.4694176, 51.7624200]
     var styleCache = {};
     var geoLayer = new ol.layer.Vector({
         source: new ol.source.GeoJSON({
@@ -36,14 +36,14 @@
         }
     });
 
+    
     function init() {
         map = new ol.Map({
             target: 'map',
             renderer: 'canvas',
-            view: new ol.OLM({
-                projection: 'EPSG:900913',
-                center: [-8015003.33712, 4160979.44405],
-                zoom: 5
+            view: new ol.View({
+                center: ol.proj.transform([-73.245849609375, 42.261049162113856], 'EPSG:4326', 'EPSG:3857'),
+                zoom: 4
             })
         });
 
@@ -95,6 +95,6 @@
         var topLayer = layers.removeAt(2);
         layers.insertAt(1, topLayer);
     }
-
+$(function () {
     init();
 });
