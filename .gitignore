@@ -1,43 +1,69 @@
-# Windows image file caches
-Thumbs.db
+###################
+# compiled source #
+###################
+*.com
+*.class
+#*.dll
+*.exe
+!NuGet.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog.XML
+_UpgradeReport_Files/
+###############
+# Directories #
+###############
+bin/
+obj/
+#TestResults/
+###################
+# Web publish log #
+###################
+*.Publish.xml
+######################
+# Logs and databases #
+######################
+*.log
+*.sqlite
+######################
+# OS generated files #
+######################
+.DS_Store?
 ehthumbs.db
+Icon?
+Thumbs.db
+[Bb]in
+[Oo]bj
+[Tt]est[Rr]esults
+*.suo
+*.user
+*.[Cc]ache
+*[Rr]esharper*
+_[Ss]cripts
+*.exe
+!NuGet.exe
+*.dll
+*.nupkg
+*.ncrunchsolution
+*.dot[Cc]over
+# visual studio database projects
+*.dbmdl
 
-# Folder config file
-Desktop.ini
+# Include dlls if they’re in the NuGet packages directory
+packages
+packages/*/*
+packages/*/*/*
+packages/*/*/*/*
+!packages/repositories.config 
+Properties/PublishProfiles/*.pubxml
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+!*CommonReferences/*.dll
+######################
+# Editor left-overs  #
+######################
+.orig
