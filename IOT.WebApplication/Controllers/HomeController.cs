@@ -14,6 +14,7 @@ namespace IOT.WebApplication.Controllers
             return View();
         }
 
+       
         public ActionResult BaseDevices()
         {
             return View();

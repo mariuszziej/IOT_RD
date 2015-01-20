@@ -185,6 +185,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\bike.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="App_Data\7day-M2.5.json" />
@@ -202,6 +203,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\MyScripts\deviceBaseBroadcaster.js" />
+    <Content Include="Scripts\MyScripts\janekScript.js" />
     <Content Include="Scripts\MyScripts\myTest.js" />
     <Content Include="Scripts\ol-debug.js" />
     <Content Include="Scripts\ol.js" />

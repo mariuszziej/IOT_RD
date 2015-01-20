@@ -43,7 +43,7 @@ namespace IOT.WebApplication.SignalR
 
             foreach (var device in allDevices)
             {
-                _devices.TryAdd(device.DeviceId, device);
+                _devices.TryAdd(device.Id, device);
             }
         }
 
