@@ -25,13 +25,18 @@ namespace IOT.WebApplication
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Scripts/leaflet/leaflet.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/ol").Include(
                 "~/Scripts/ol-debug.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/signalr").Include(
                "~/Scripts/jquery.signalR-2.1.2.js"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/leaflet").Include(
+               "~/Scripts/leaflet/leaflet.js"));
         }
     }
 }
