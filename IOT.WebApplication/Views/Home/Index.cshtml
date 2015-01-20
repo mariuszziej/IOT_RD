@@ -2,11 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
-@Scripts.Render("~/bundles/ol")
-<link rel='stylesheet' href='http://ol3js.org/en/master/css/ol.css'>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="~/Scripts/MyScripts/myTest.js"></script>
+@*<script type="text/javascript">
+    var baseballMarker = '@Url.Content("~/Content/Icons/blueBikeSmall.png")';
+</script>*@
 
-
-<div id='map'></div>
-<button style='position:absolute; left: 10px; top:30%' onclick='removeTopLayer()'>Remove Top Layer</button>
-<button style='position:absolute; left: 10px; top:40%' onclick='swapTopLayer()'>Swap Top Layers</button>
+<div id="map" style="width: 600px; height: 400px"></div>

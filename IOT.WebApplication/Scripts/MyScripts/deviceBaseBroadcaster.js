@@ -32,7 +32,7 @@
         ],
         view: new ol.View({
             center: ol.proj.transform([19.4694176, 51.7624200], 'EPSG:4326', 'EPSG:3857'),
-            zoom: 14
+            zoom: 4
         }),
         controls: ol.control.defaults({
             attributionOptions: {
@@ -49,7 +49,12 @@
         }),
         style: function (feature, resolution) {
             console.log(resolution);
-            var text = resolution < 5000 ? feature.get('name') : '';
+            if (resolution < 5000)
+            {
+                text = feature.get('name');
+            } else {
+                text = '';
+            }
             if (!styleCache[text]) {
                 styleCache[text] = [new ol.style.Style({
                     fill: new ol.style.Fill({
@@ -72,6 +77,8 @@
                     }),
                     zIndex: 999
                 })];
+            } else {
+                var int = 0;
             }
             return styleCache[text];
         }
