@@ -4,20 +4,12 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-@Scripts.Render("~/bundles/ol")
 @Scripts.Render("~/bundles/signalr")
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link href="~/Content/BaseDevices.css" rel="stylesheet">
 <script src="/signalr/hubs"></script>
-<link rel='stylesheet' href='http://ol3js.org/en/master/css/ol.css'>
-<script src="~/Scripts/MyScripts/janekScript.js"></script>
+<script src="~/Scripts/MyScripts/deviceBaseBroadcaster.js"></script>
 
-@*<style>
-    #map {
-        height: 100%;
-        width: 100%;
-    }
-</style>*@
-
-
-
-<div id="map" class="map"></div>
+<div id="map"></div>
 
