@@ -33,8 +33,6 @@ var Markers = new L.FeatureGroup();
 var map;
 
 var populateChanges = function (devices) {
-    //map.removeLayer(Markers);
-    //Markers.clearLayers();
     var markers = Markers.getLayers();
     
     $.each(devices, function () {
@@ -44,19 +42,17 @@ var populateChanges = function (devices) {
             var coordinates = JSON.parse(device.Message);
             var newLatLng = new L.LatLng(coordinates.latitude, coordinates.longitude);
             markers[deviceIndex].setLatLng(newLatLng);
-            markers[deviceIndex].EventDate = device.EventDate;
-            markers[deviceIndex].Message = device.Message;
-            markers[deviceIndex].IMessageTypeId = device.IMessageTypeId;
             markers[deviceIndex].unbindPopup();
             markers[deviceIndex].bindPopup(createPopupFromDevice(device));
+            extendMarkerByDeviceProperties(markers[deviceIndex], device)
         } else {
             var coordinates = JSON.parse(device.Message);
             var marker = L.marker([coordinates.latitude, coordinates.longitude]);
             marker.bindPopup(createPopupFromDevice(device));
             extendMarkerByDeviceProperties(marker, device);
+            Markers.addLayer(marker);
         }
     });
-    //map.addLayer(Markers);
 }
 
 var extendMarkerByDeviceProperties = function (marker, device) {
@@ -75,9 +71,7 @@ var createPopupFromDevice = function (device) {
                       "<p>Message:" + device.Message + "</p>" +
                       "<p>EventDate:" + device.EventDate + "</p>" +
                       "<p>ID:" + device.Id + "</p>";
-
     return returnPopup;
-        
 };
 
 var isMarkersContainsDevice = function (markers, device) {
@@ -89,7 +83,7 @@ var isMarkersContainsDevice = function (markers, device) {
     return -1;
 };
 
-//kind of reflection in JavaScript
+//kind of reflection in JavaScript (przyda się pozniej jak bedzie wiecej rodz. urzadzen)
 var getPropertyTable = function (obj) {
     var keys = [];
     for (var key in obj) {
