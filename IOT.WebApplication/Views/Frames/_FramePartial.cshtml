@@ -1,0 +1,56 @@
+﻿@model IOT.Domain.Frames.Frame
+
+
+<script>
+    $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script>
+
+
+<div>
+
+    <h4>Frame elements</h4>
+    <hr />
+
+
+    <div id="divFrameElements">
+        <div id="tabheaders">
+            <ul id="sortable" class="nav nav-tabs" role="tablist">
+
+                @foreach (var element in Model.Elements)
+                {
+                    string collapseDiv = "#collapse" + element.Id;
+                    string collapseDivControls = "collapse" + element.Id;
+                    <li>
+
+                        <a href=@collapseDiv role="tab" data-toggle="tab" aria-controls=@collapseDivControls>
+                            @Html.Label(element.Name)
+                        </a>
+
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="tab-content">
+            @foreach (var element in Model.Elements)
+            {
+                string collapseDivControls = "collapse" + element.Id;
+                <div role="tabpanel" class="tab-pane fade" id=@collapseDivControls>
+                    <div class="well" >
+                        <dl>
+                            <dt>Name</dt>
+                            <dd>@element.Name</dd>
+                            <dt>Size</dt>
+                            <dd>@element.Size</dd>
+                            <dt>Description</dt>
+                            <dd>@element.Description</dd>
+                        </dl>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
