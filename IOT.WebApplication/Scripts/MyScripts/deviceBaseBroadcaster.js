@@ -74,7 +74,8 @@ var createPopupFromDevice = function (device) {
     return returnPopup;
 };
 
-var isMarkersContainsDevice = function (markers, device) {
+var isMarkersConth
+;ainsDevice = function (markers, device) {
     for (var i = 0; i < markers.length; i++) {
         if (markers[i].Id == device.Id) {
             return i;

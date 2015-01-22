@@ -26,6 +26,11 @@ namespace IOT.WebApplication.Controllers
 
             return View();
         }
+
+        public ActionResult DragAndDrop()
+        {
+            return View();
+        }
         
         public FileResult GetEarthquakeJSON()
         {

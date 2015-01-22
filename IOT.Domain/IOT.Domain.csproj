@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeviceBase.cs" />
+    <Compile Include="Frames\Frame.cs" />
+    <Compile Include="Frames\FrameType.cs" />
     <Compile Include="M2M\DeviceState.cs" />
     <Compile Include="M2M\Entities\Device.cs" />
     <Compile Include="M2M\Entities\Location.cs" />
